@@ -9,13 +9,9 @@ public:
 
     IODevice() = default;
 
-    IODevice(const IODevice &dev) = delete;
-
     IODevice(IODevice &&dev) noexcept;
 
     ~IODevice();
-
-    IODevice& operator=(const IODevice &dev) = delete;
 
     IODevice& operator=(IODevice &&dev) noexcept;
 
